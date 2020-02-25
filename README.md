@@ -3,7 +3,8 @@ Plugin to send sms to both users
 
 Features:
 - Works with MSG91 API 
-- Accept a custom field in buddypress and send a message when a contact button is clicked. 
+- Creates a contact button on buddypress profile 
+- When clicked on contact sends email and sms to the user  
 
 TO DO:
 1. Add field to All user option were individually limit can be set which overrides the global limit.
