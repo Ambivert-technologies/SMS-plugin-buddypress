@@ -185,11 +185,6 @@ if(isset($_POST["online_user"]) and isset($_POST["profile_user"])){
 
 
  }
-
-
-
-
-
  //  echo get_option('success_msg_txt');
 }
 
@@ -220,16 +215,6 @@ if(isset($_POST["online_user"]) and isset($_POST["profile_user"])){
 
 }
 add_filter( 'bp_before_member_header_meta', 'my_custom_button' );
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -295,10 +280,6 @@ class Sub_menu {
             }else{
               add_option( $key, $value  );
             }
-
-
-
-
           }
 
           /*if(!isset($msg_count)){
@@ -311,12 +292,6 @@ class Sub_menu {
             update_option( 'success_msg_txt', $success );
 
           }*/
-
-
-
-
-
-
         }
 
         ?>
@@ -346,13 +321,9 @@ class Sub_menu {
 
                 <input type="checkbox" value="<?=$results->id;?>"  <?php if (in_array($results->id, $msg91_field)) {echo "checked";} ?> name="msg91_field_send[]" class="form-control" > <?=$results->name?>
               </div>
-
-
-
             <?php
-          }
-
             }
+          }
 
 
           ?>
@@ -365,13 +336,7 @@ class Sub_menu {
               if($results->id != "793"){
             ?>
 
-
-
-
                 <option value="<?=$results->id;?>"  <?php if ($results->id == get_option("get_mobile_number_field")){echo "selected";} ?> > <?=$results->name?></option>
-
-
-
 
             <?php
           }
@@ -400,26 +365,12 @@ class Sub_menu {
 
           <button type="submit" name="submit" value="submit" style="    border: 1px solid #ccc;" class="btn btn-default">Submit</button>
         </form>
-
-
-
-
-
-
-
-
-
-
-
-
         <?php
     }
 
 }
 
 new Sub_menu();
-
-
 function get_xprofile_form_fields($field_id) {
 
     global $wpdb;
@@ -495,9 +446,5 @@ function sms_limit( $user_id ) {
 
     return $phone_number;
 }
-
-
-
-
 
 ?>
