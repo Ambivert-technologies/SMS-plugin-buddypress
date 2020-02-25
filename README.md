@@ -1,4 +1,4 @@
-# SMS Plugin
+# Email and SMS button for buddypress Plugin
 Plugin to send sms to both users
 
 Features:
